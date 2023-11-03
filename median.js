@@ -6,7 +6,7 @@
  * @returns {number} The median value
  */
 export function median(array) {
-    if (array.length === 0) {
+    if (array.reduce((a, b) => a + b, 0) === 0) {
         return 0;
     }
 
